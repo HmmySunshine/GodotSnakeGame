@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8fh2r13n6rtl"]
+
+[ext_resource type="Texture2D" uid="uid://btxtfswwl76xn" path="res://assets/yumi.png" id="1_buqi0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h35m8"]
+size = Vector2(33, 13)
+
+[node name="Food" type="Area2D" groups=["food"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_h35m8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_buqi0")
